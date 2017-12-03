@@ -1,0 +1,4 @@
+SELECT receita_ano_exercicio, count(*) as soma FROM hackin.receita
+where receita_ds_cd_aplicacao_variavel ='00 - CÓDIGO DE APLICAÇÃO NÃO CONTÉM/INFORMOU PARTE VARIÁVEL'
+group by receita_ano_exercicio
+

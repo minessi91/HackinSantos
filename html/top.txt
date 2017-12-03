@@ -1,0 +1,4 @@
+SELECT receita_ds_cd_aplicacao_variavel, sum(receita_vl_arrecadacao) as soma, count(*) as countd FROM hackin.receita
+where receita_ano_exercicio = '2017'
+group by receita_ds_cd_aplicacao_variavel
+order by soma desc limit 5;
